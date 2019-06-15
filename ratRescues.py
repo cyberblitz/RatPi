@@ -5,9 +5,7 @@ import datetime
 import ratLoginCookieAuth
 
 # Fuel Rat api Rescue URL
-rescue_url = "https://api.fuelrats.com/rescues"
-
-# access saved file containing cookie. Cookie Created in ratLoginCookieAuth.py
+rescue_url = "https://api.fuelrats.com/rescues
 
 
 # function to extract JSON from Rescue API end point. Here is were the cookie is injected to authenticate
@@ -40,7 +38,7 @@ def dte_convert(dte):
     ret = '%d days %d hours %d mins' % (dy[0], hrs[0], mins[0])
     return ret
 
-
+# access saved file containing cookie. Cookie Created in ratLoginCookieAuth.py
 try:
     with open('ratCookie', 'rb') as f:
         ratcookie = pickle.load(f)
